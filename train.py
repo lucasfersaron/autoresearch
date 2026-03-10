@@ -17,6 +17,13 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from kernels import get_kernel
+if not torch.cuda.is_available():
+    raise SystemExit(
+        "autoresearch requires a CUDA-capable NVIDIA GPU to run train.py. "
+        "This checkout can be installed on macOS for inspection and prep, "
+        "but training must run on a CUDA host."
+    )
+
 cap = torch.cuda.get_device_capability()
 # varunneal's FA3 is Hopper only, use kernels-community on non-Hopper GPUs
 repo = "varunneal/flash-attention-3" if cap == (9, 0) else "kernels-community/flash-attn3"
