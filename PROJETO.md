@@ -137,3 +137,4 @@ Este projeto segue as regras definidas em:
 - `README.md`: guia original do projeto
 - `program.md`: baseline de instrucao para o agente
 - `docs/DISC-AUTORESEARCH-BOOTSTRAP-CUDA-2026-03-10.md`: diagnostico operacional e proxima decisao de execucao
+- `docs/RUNBOOK-CUDA-BASELINE.md`: procedimento DevOps para o primeiro treino real em host NVIDIA/CUDA

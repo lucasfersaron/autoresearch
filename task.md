@@ -21,6 +21,12 @@ Adicionar o projeto `autoresearch` ao workspace, deixar o ambiente preparado e r
 - [x] Rodar `uv run prepare.py --num-shards 10`
 - [ ] Rodar `uv run train.py`
 
+### Handoff operacional
+
+- [x] Criar DISC de bootstrap/CUDA
+- [x] Criar runbook para baseline em host CUDA
+- [ ] Executar baseline em host CUDA
+
 ### Bloqueios atuais
 
 - [x] Registrar que treino requer GPU NVIDIA/CUDA
